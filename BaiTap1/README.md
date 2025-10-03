@@ -1,18 +1,12 @@
 # Bài tập 1 - Tài liệu
 
 ## Câu 1  
-Sau khi học xong môn lập trình thiết bị di động, mong muốn của em là:  
-- Thành thạo ở mức tương đối ngôn ngữ lập trình **Kotlin**.  
-- Nắm vững những kiến thức cơ bản và nâng cao hơn một chút về lập trình ứng dụng Android: phương pháp, cấu trúc, lý thuyết, thiết kế UI/UX thân thiện và trực quan.  
-- Trong tương lai: trau dồi Kotlin ở mức nâng cao, mở rộng sang **Flutter**, thực hiện nhiều project hơn, và có thể **tự xây dựng & triển khai ứng dụng hoàn chỉnh lên CH Play**.  
+Sau khi học xong môn lập trình thiết bị di động, mong muốn của em là: thành thạo ở mức tương đối ngôn ngữ lập trình Kotlin;  nắm vững những kiến thức cơ bản và nâng cao hơn một chút về lập trình ứng dụng android, về phương pháp, cấu trúc, lý thuyết, cách thiết kế UI, UX sao cho thân thiện và trực quan với người dùng…Về phần định hướng trong tương lai, em sẽ trau dồi thêm kiến thức và Kotlin ở mức nâng cao, mở ra thêm kiến thức về Flutter, từ đó thực hiện thêm nhiều project khác và sau đó nữa có thể tự xây dựng và triển khai một ứng dụng hoàn chỉnh lên CH Play.   
 
 ---
 
 ## Câu 2  
-Theo em, trong tương lai gần (10 năm), **lập trình di động sẽ tiếp tục phát triển mạnh mẽ** bởi vì:  
-1. Nhu cầu sử dụng smartphone ngày càng tăng, trở thành thiết bị không thể thiếu trong đời sống hằng ngày.  
-2. Hàng loạt công nghệ mới như **AI, AR, VR, 5G/6G, IoT** thúc đẩy ngành này phát triển.  
-3. Sự đầu tư mạnh mẽ của các hãng điện thoại và công ty công nghệ là đòn bẩy khiến lập trình di động không bao giờ mất đi sức hút.  
+Theo em, trong tương lai gần (10 năm) lập trình di động sẽ tiếp tục phát triển mạnh mẽ bởi vì: thứ nhất, nhu cầu sử dụng smartphone ngày càng tăng, nó đã trở thành 1 thiết bị không thể thiếu trong cuộc sống hằng ngày của chúng ta, được vận dụng vào hầu hết vào các công việc và ngành nghề; thứ 2, hàng loạt công nghệ mới như AI, AR, VR, mạng 5G và 6G hay IoT cũng thúc đẩy ngành này; không những thế việc các hãng điện thoại hay công ty công nghệ cũng là một đòn bẩy giúp ngành lập trình di động không bao giờ mất đi sức hút.
 
 ---
 
@@ -74,3 +68,7 @@ Theo em, trong tương lai gần (10 năm), **lập trình di động sẽ tiế
 
 - **Spacer(...)**  
   → Tạo khoảng trống dọc hoặc ngang.  
+
+  ---
+  ![Ảnh Output](BaiTap1/output.png)
+
