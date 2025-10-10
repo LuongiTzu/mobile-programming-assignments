@@ -70,5 +70,4 @@ Theo em, trong tương lai gần (10 năm) lập trình di động sẽ tiếp t
   → Tạo khoảng trống dọc hoặc ngang.  
 
   ---
-  ![Ảnh Output](BaiTap1/output.png)
-
+  ![output](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTap1/output.png)
