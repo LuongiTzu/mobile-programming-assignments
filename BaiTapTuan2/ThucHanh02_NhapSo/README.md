@@ -21,3 +21,7 @@ Tạo thẻ (Card) hiển thị từng phần tử số trong danh sách sinh ra
 
 ### `@Preview fun DefaultPreview()`
 Hiển thị bản xem trước giao diện trong Android Studio.
+---
+![Output1](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/ThucHanh02_NhapSo/output1.png)
+![Output2](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/ThucHanh02_NhapSo/output2.png)
+![Output3](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/ThucHanh02_NhapSo/output3.png)
