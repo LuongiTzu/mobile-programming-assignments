@@ -34,3 +34,6 @@ Nút “Kiểm tra” dùng để gọi hàm xác định email hợp lệ.
 
 ### `class MainActivity`
 Activity chính, khởi tạo và hiển thị giao diện `ManHinhNhapMail()`.
+---
+![Output1](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/ThucHanh02_NhapEmail/output1.png)
+![Output2](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/ThucHanh02_NhapEmail/output2.png)
