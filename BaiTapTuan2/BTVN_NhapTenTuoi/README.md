@@ -34,4 +34,7 @@ Hiển thị thông báo lỗi nếu nhập sai hoặc thiếu dữ liệu.
 ### `class MainActivity`
 Activity chính, khởi chạy giao diện `ManHinhNhapTenTuoi()`.
 
-
+---
+![Output1](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/BTVN_NhapTenTuoi/output1.png)
+![Output1](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/BTVN_NhapTenTuoi/output2.png)
+![Output1](https://raw.githubusercontent.com/LuongiTzu/mobile-programming-assignments/main/BaiTapTuan2/BTVN_NhapTenTuoi/output3.png)
