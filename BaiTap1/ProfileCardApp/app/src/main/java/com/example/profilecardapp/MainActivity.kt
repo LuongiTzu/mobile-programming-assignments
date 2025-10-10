@@ -152,13 +152,13 @@ fun ProfileCardScreen(modifier: Modifier = Modifier) {
                         text = "Tuan Luong Huynh",
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Black
+                        color = Color.Red
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = "Ho Chi Minh City, Vietnam",
                         fontSize = 16.sp,
-                        color = Color(0xFF757575)
+                        color = Color.Red
                     )
                 }
             }
