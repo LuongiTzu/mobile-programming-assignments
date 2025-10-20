@@ -34,7 +34,7 @@ fun WelcomeScreen(onReady: () -> Unit) {
             contentDescription = "Jetpack Compose",
             modifier = Modifier.size(170.dp)
         )
-        //tạo khoảng cách ta có câu
+
          Spacer(modifier = Modifier.height(16.dp))
         Text("Jetpack Compose",
             fontSize = 24.sp,

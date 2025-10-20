@@ -44,7 +44,6 @@ fun RowLayoutScreen(onBack: () -> Unit) {
 
         Spacer(Modifier.height(10.dp))
 
-        // Grid 3 cột x 4 hàng
         Column(
             modifier = Modifier.fillMaxWidth(),
             horizontalAlignment = Alignment.CenterHorizontally

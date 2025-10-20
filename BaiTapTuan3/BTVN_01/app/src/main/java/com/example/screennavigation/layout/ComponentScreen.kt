@@ -3,7 +3,9 @@ package com.example.screennavigation.layout
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
@@ -25,14 +27,15 @@ fun ComponentScreen(
     onBack: () -> Unit,
     onOpenImage: () -> Unit,
     onOpenTextField: () -> Unit,
-    onOpenRowLayout: () -> Unit
+    onOpenRowLayout: () -> Unit,
+    onLazyColumn: () -> Unit
 ) {
     Column(modifier = Modifier.fillMaxSize()) {
 
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 8.dp, vertical = 30.dp)
+                .padding(horizontal = 24.dp, vertical = 24.dp)
         ) {
             Row(
                 modifier = Modifier
@@ -61,7 +64,8 @@ fun ComponentScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(16.dp),
+                .padding(16.dp)
+                .verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text("Display", fontWeight = FontWeight.Bold)
@@ -77,11 +81,20 @@ fun ComponentScreen(
             Text("Layout", fontWeight = FontWeight.Bold)
             MenuItem(title = "Column", subtitle = "Arranges elements vertically")
             MenuItem(title = "Row", subtitle = "Arranges elements horizontally", onClick = onOpenRowLayout)
+
+            Spacer(Modifier.height(6.dp))
+            Text("Lazy List", fontWeight = FontWeight.Bold)
+            MenuItem(title = "Lazy Column", subtitle = "Displays a list of items vertically", onClick = onLazyColumn)
+            MenuItem(title = "Lazy Row", subtitle = "Displays a list of items horizontally")
+
+            Spacer(Modifier.height(6.dp))
+            Text("Lazy List", fontWeight = FontWeight.Bold)
+            //MenuItem(title = "dmmm", subtitle = "Displays a list of items", onClick = onDetail)
+            //MenuItem(title = "cai cacsco cáccs", subtitle = "Displays a list of items horizontally")
         }
     }
 }
 
-/* -------------------- COMPONENT Ô MỤC -------------------- */
 @Composable
 private fun MenuItem(
     title: String,
@@ -98,7 +111,7 @@ private fun MenuItem(
     ) {
         Column(
             modifier = Modifier
-                .background(Color(0xFFD1E6FF)) // xanh nhạt giống ảnh
+                .background(Color(0xFFD1E6FF))
                 .padding(horizontal = 16.dp, vertical = 10.dp),
             verticalArrangement = Arrangement.Center
         ) {
@@ -118,7 +131,8 @@ fun ComponentScreenPreview() {
             onBack = {},
             onOpenImage = {},
             onOpenTextField = {},
-            onOpenRowLayout = {}
+            onOpenRowLayout = {},
+            onLazyColumn = {}
         )
     }
 }

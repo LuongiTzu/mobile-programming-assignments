@@ -11,7 +11,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.screennavigation.layout.ComponentScreen
+import com.example.screennavigation.layout.DetailScreen
 import com.example.screennavigation.layout.ImageScreen
+import com.example.screennavigation.layout.LazyColumnScreen
 import com.example.screennavigation.layout.RowLayoutScreen
 import com.example.screennavigation.layout.TextFieldScreen
 import com.example.screennavigation.layout.TextScreen
@@ -25,6 +27,8 @@ object Routes {
     const val imageDetail = "imagescreen"
     const val textFieldDetail = "textfieldscreen"
     const val rowLayout = "rowscreen"
+    const val lazyColumn = "lazycolumn"
+    const val detailPage = "detail"
 }
 
 class MainActivity : ComponentActivity() {
@@ -44,6 +48,7 @@ fun AppNavigation() {
     NavHost(navController = navController, startDestination = Routes.welcome) {
         composable(Routes.welcome) {
             WelcomeScreen(onReady = { navController.navigate(Routes.components) })
+            //WelcomeScreen(onReady = { navController.navigate(Routes.lazyColumn) })
         }
         composable(Routes.components) {
             ComponentScreen(
@@ -51,7 +56,8 @@ fun AppNavigation() {
                 onBack = { navController.popBackStack() },
                 onOpenImage = { navController.navigate(Routes.imageDetail) },
                 onOpenTextField = { navController.navigate(Routes.textFieldDetail) },
-                onOpenRowLayout = { navController.navigate(Routes.rowLayout) }
+                onOpenRowLayout = { navController.navigate(Routes.rowLayout) },
+                onLazyColumn = { navController.navigate(Routes.lazyColumn) }
             )
         }
         composable(Routes.textDetail) {
@@ -65,6 +71,15 @@ fun AppNavigation() {
         }
         composable(Routes.rowLayout) {
             RowLayoutScreen(onBack = { navController.popBackStack() })
+        }
+        composable(Routes.lazyColumn) {
+            LazyColumnScreen (
+                onBack = { navController.popBackStack()},
+                onDetail = { navController.navigate(Routes.detailPage)})
+        }
+        composable(Routes.detailPage) {
+            DetailScreen(onBackToRoot = { navController.popBackStack(Routes.welcome, inclusive = false) },
+                onBack = { navController.popBackStack() })
         }
     }
 }
