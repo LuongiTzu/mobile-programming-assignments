@@ -26,7 +26,7 @@ data class FlowUiState(
 data class ConfirmedInfo(
     val email: String,
     val otp: String,
-    val password: String        // lưu mật khẩu thật để có thể ẩn/hiện ở màn Forgot
+    val password: String
 )
 
 class PasswordFlowViewModel(

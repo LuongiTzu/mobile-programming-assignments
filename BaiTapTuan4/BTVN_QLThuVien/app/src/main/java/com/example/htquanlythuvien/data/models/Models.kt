@@ -1,7 +1,7 @@
 package com.example.htquanlythuvien.data.model
 import org.threeten.bp.Instant
 
-/** Thực thể sách (đơn giản cho bài tập) */
+/** Thực thể sách */
 data class Book(
     val id: String,
     val title: String,
@@ -14,7 +14,7 @@ data class Student(
     val name: String
 )
 
-/** (để dành) Lịch sử mượn sách – dùng khi bạn muốn nâng cấp tính năng */
+/**Lịch sử mượn sách */
 data class BorrowRecord(
     val id: String,
     val studentId: String,

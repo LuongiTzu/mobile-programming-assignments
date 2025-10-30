@@ -26,10 +26,4 @@ fun AppNavHost(
     }
 }
 
-/** Preview độc lập cho NavHost */
-@androidx.compose.ui.tooling.preview.Preview(showBackground = true, showSystemUi = true)
-@Composable
-private fun AppNavHostPreview() {
-    val nav = rememberNavController()
-    AppNavHost(navController = nav)
-}
+
